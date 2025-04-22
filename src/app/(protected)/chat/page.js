@@ -12,7 +12,7 @@ export default function Chat() {
     initialMessages:[
       {
         role: "model",
-        content: `Hello, I am Maitri Bot, your friendly and helpful chatbot for women's health and well-being. I can provide you with information and guidance on various topics related to women's health, such as:
+        content: `Hello, I am LillyBlossom Bot, your friendly and helpful chatbot for women's health and well-being. I can provide you with information and guidance on various topics related to women's health, such as:
 
   - Women safety
   - Period and menstrual cycle
@@ -27,7 +27,7 @@ Please note that I am not a medical professional, and my advice is not a substit
   return (
     <div className="relative h-[calc(100vh-190px)] overflow-y-auto hide-scrollbar">
       <main className="flex-1 flex flex-col gap-4 py-4">
-        {/* <SakhiMessage message="Hi, I am Maitri Bot. I am here to help you regarding female wellness." /> */}
+        {/* <SakhiMessage message="Hi, I am LilyBlossom Bot. I am here to help you regarding female wellness." /> */}
         {messages.map((m, index) =>
           m.role !== "user" ? (
             <SakhiMessage message={m.content} key={index} />
